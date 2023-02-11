@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color: azure;
+    background: black;
+    height: 100vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    height: 500px;
+    width: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(56, 56, 56);
+    box-shadow: 0 20px 25px 25px rgb(0, 0, 0,0.5);
+    padding-right: 10px;
+}
+.container .image{
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+
+   
+}
+.container .days{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .day{
+font-size: 90%;
+}
+.container .day,
+.container .number,
+.container .numbers{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+.container .numbers{
+    color: rgba(238, 238, 238, 0.4);
+}
+.container img{
+    height: 500px;
+    padding:30px
+}
+.container .number:hover,
+.container .numbers:hover{
+    border: 2px solid rgba(238, 238, 238, 0.4);
+}
+.container .date{
+    width: 400px;
+    padding: 25px;
+}
+.container h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 15px 30px;
+    display: inline;
+}
+.container p{
+    display: inline;
+    margin-left: 100px;
+}
+.container p span{
+    margin: 10px;
+    font-size: 20px;
+}
+.container .number.active{
+    background: rgb(73, 73, 247);
+    border: 2px solid rgba(238, 238, 238, .4);
+}
